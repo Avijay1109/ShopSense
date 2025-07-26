@@ -31,3 +31,12 @@
       <li>Marketing teams can focus on ensuring that a customer makes the purchase</li>
     </ul>
   </div>
+
+ <div class="recent improvements">
+    <h2>✅ Recent Improvements</h2>
+    <ul>
+      <li>Better Error Handling</li>
+      <li>Feature Description Introduced</li>
+      li>Improved User Experience</li>
+    </ul>
+  </div>  
