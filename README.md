@@ -37,6 +37,6 @@
     <ul>
       <li>Better Error Handling</li>
       <li>Feature Description Introduced</li>
-      li>Improved User Experience</li>
+      <li>Improved User Experience</li>
     </ul>
   </div>  
