@@ -1,11 +1,9 @@
 # app.py
 import streamlit as st
 import pandas as pd
-import joblib
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
-import io
-import xlsxwriter
+
 
 st.set_page_config(page_title="ShopSense", layout="wide")
 
@@ -76,18 +74,18 @@ if "view_insights" not in st.session_state:
 
 col1, col2 = st.columns([1, 1], gap="large")
 with col1:
-    if st.button("📝 Enter Manually"):
+    if st.button("Enter Manually"):
         st.session_state.manual_mode = True
         st.session_state.upload_mode = False
         st.session_state.view_insights = False
 with col2:
-    if st.button("📊 View Insights"):
+    if st.button("View Insights"):
         st.session_state.view_insights = True
         st.session_state.manual_mode = False
         st.session_state.upload_mode = False
 
 # --- Prepare Data and Model ---
-df = pd.read_csv("online_shoppers_intention.csv")
+df = pd.read_csv("Data/online_shoppers_intention.csv")
 df_model = df.copy()
 
 label_encoders = {}
@@ -118,7 +116,7 @@ feature_labels = {
 df_model['EngagementScore'] = df_model['PageValues'] / (df_model['ExitRates'] + 0.01)
 X = df_model[final_features]
 y = df_model['Revenue']
-model = RandomForestClassifier(n_estimators=100, random_state=42)
+model = RandomForestClassifier(n_estimators=120, random_state=42)
 model.fit(X, y)
 
 # --- Manual Entry Form ---
@@ -194,7 +192,7 @@ if st.session_state.manual_mode:
 
 # --- Insights View ---
 if st.session_state.view_insights:
-    st.subheader("📊 Key Insights Dashboard")
+    st.subheader("Key Insights Dashboard")
 
     st.markdown("### **Fig 1 - Feature Correlation with Purchase Intent**")
     st.image("Fig 1.png")
