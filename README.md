@@ -1,6 +1,8 @@
   <h1>🛍️ ShopSense</h1>
   <p><strong>Predicting eCommerce Purchase Intent through Behavioral Data</strong></p>
 
+  <img src=""Images\Website Banner.png"" alt="ShopSense Banner" style="max-width: 100%; height: auto; margin: 20px 0;">
+
   <div class="section">
     <h2>🔍 About the Project</h2>
     <p>
