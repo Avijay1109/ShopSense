@@ -60,7 +60,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<h1 style='text-align:center; font-size:60px; color:#9D2235;'>ShopSense</h1>", unsafe_allow_html=True)
-st.image("Your paragraph text.png", use_container_width=True)
+st.image("Images/Website Banner.png", use_container_width=True)
 
 st.markdown("<div style='text-align:center; margin-top:20px;'>", unsafe_allow_html=True)
 
@@ -195,21 +195,21 @@ if st.session_state.view_insights:
     st.subheader("Key Insights Dashboard")
 
     st.markdown("### **Fig 1 - Feature Correlation with Purchase Intent**")
-    st.image("Fig 1.png")
+    st.image("Images/Fig 1.png")
     st.caption("PageValues, ProductRelated activity, and ProductRelated_Duration are the strongest positive predictors of purchase intent, while ExitRates and BounceRates are negatively correlated. Most technical and categorical features show minimal correlation.")
     st.markdown("**Business Recommendation:**\nFocus on increasing product engagement and perceived page value by enriching product detail pages and highlighting promotions. Simultaneously, minimize friction points that elevate Exit and Bounce Rates—like slow load times or poor navigation—to strengthen conversion outcomes.")
 
     st.markdown("### **Fig 2 - Avg. Purchase Rate by Page Value Bin**")
-    st.image("Fig 2.png")
+    st.image("Images/Fig 2.png")
     st.caption("Sessions with higher Page Value strongly correlate with increased likelihood of purchase, with conversion rates rising from just 5.3% in the lowest bin (1–5) to 86.6% in the highest (100+).")
     st.markdown("**Business Recommendation:**\nInvest in strategies that increase Page Value—such as showcasing relevant promotions, improving product recommendations, or enhancing content depth—to significantly boost purchase intent and drive higher conversions.")
 
     st.markdown("### **Fig 3 - Avg. Purchase Rate by Exit Rate Bin**")
-    st.image("Fig 3.png")
+    st.image("Images/Fig 3.png")
     st.caption("Purchase rates sharply decline as Exit Rates increase—from 19.2% in the lowest bin (0–0.05) to less than 1% beyond 0.1—highlighting Exit Rate as a strong negative predictor of conversion.")
     st.markdown("**Business Recommendation:**\nPrioritize reducing Exit Rates through improved page flow, engaging content, and clearer call-to-actions—especially within the early part of the session—to retain potential buyers and improve conversion outcomes.")
 
     st.markdown("### **Fig 4 - Average Values of Key Features**")
-    st.image("Fig 4.png")
+    st.image("Images/Fig 4.png")
     st.caption("Product-related engagement—both in terms of time spent and pages viewed—dominates user behavior, with an average session time of over 1800 seconds and 48 product pages viewed. In contrast, friction metrics like Exit and Bounce Rates remain low on average.")
     st.markdown("**Business Recommendation:**\nDouble down on optimizing product page experiences through richer content, dynamic recommendations, and streamlined navigation. These high-engagement areas offer the greatest leverage for boosting conversions, while low friction rates should be maintained with intuitive site design and fast load speeds.")
