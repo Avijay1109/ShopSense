@@ -106,9 +106,9 @@ feature_labels = {
     'ExitRates': ('Exit Rates', 'The percentage of website visits that end on a specific web page'),
     'BounceRates': ('Bounce Rates', 'The percentage of single-page sessions on your website'),
     'EngagementScore': ('Engagement Score', '(Page Values/Exit Rates + 0.01)'),
-    'ProductRelated_Duration': ('Time Spent on Product Pages', ''),
-    'ProductRelated': ('No. of Product Pages Visited', ''),
-    'Administrative_Duration': ('Time Spent on Administrative Pages', ''),
+    'ProductRelated_Duration': ('Time Spent on Product Pages', 'Calculated in seconds'),
+    'ProductRelated': ('No. of Product Pages Visited', 'Pages where products are featured'),
+    'Administrative_Duration': ('Time Spent on Administrative Pages', 'Calculated in seconds'),
     'Administrative': ('No. of Administrative Pages Visited', '')
 }
 
